@@ -1,0 +1,39 @@
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        header h1 {
+            margin-bottom: 5px;
+        }
+        header p {
+            margin-top: 0;
+            color: #555;
+        }
+        .ingredient-list {
+            display: grid;
+            grid-template-columns: 1fr 100px 100px;
+            gap: 10px;
+        }
+        .ingredient-item {
+            display: contents;
+        }
+        .ingredient-checkbox {
+            margin: 0;
+        }
+        .column-header {
+            font-weight: bold;
+            text-align: center;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>

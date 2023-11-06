@@ -1,0 +1,23 @@
+<div id="results" hx-post="/search" style="width: 100%;">
+    <button type="submit" style="margin-bottom: 20px;">Search Again</button>
+
+    <h2>Search Results</h2>
+    <table border="1" style="width: 100%; border-collapse: collapse;">
+        <tr>
+            <th style="padding: 8px; text-align: left;">ID</th>
+            <th style="padding: 8px; text-align: left;">Name</th>
+            <th style="padding: 8px; text-align: left;">URL</th>
+            <th style="padding: 8px; text-align: left;">Rating</th>
+        </tr>
+        {% for recipe in recipes %}
+            <tr>
+                <td style="padding: 8px;">{{ recipe.id }}</td>
+                <td style="padding: 8px;"><a href="{{ recipe.url }}">{{ recipe.name }}</a></td>
+                <td style="padding: 8px;">{{ recipe.url }}</td>
+                <td style="padding: 8px;">{{ recipe.rating }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+
+
