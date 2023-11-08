@@ -1,0 +1,8 @@
+# ignore all __pychache__ directories
+**/__pycache__/
+__pychache__/
+/__pychache__
+/__pychache__/
+# ignore all env directories
+env/
+/env/
