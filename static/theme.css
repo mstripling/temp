@@ -1,0 +1,80 @@
+/* Overall body styles */
+body {
+    font-family: 'Consolas', 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #101018; /* Dark background */
+    color: #c0c0c8; /* Light grey text for readability */
+}
+
+/* Styling for the container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #181828; /* Slightly lighter dark shade for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+/* Header styles with lighter accent colors */
+header h1 {
+    margin-bottom: 5px;
+    color: #9a9cd0; /* Soft purple for the heading to add color without being too bright */
+}
+
+header p {
+    margin-top: 0;
+    color: #555568; /* Muted color for text to ensure it's not too bright against the dark theme */
+}
+
+/* Grid list styling */
+.ingredient-list {
+    display: grid;
+    grid-template-columns: 1fr 100px 100px;
+    gap: 10px;
+    align-items: center; /* Align grid items vertically */
+}
+
+/* Item labels and checkboxes */
+.ingredient-item {
+    padding: 5px; /* Padding for spacing */
+    color: #d8d8f0; /* Light text to contrast against dark bg */
+}
+
+.ingredient-checkbox {
+    margin: 0;
+    accent-color: #4c4ca8; /* Giving checkboxes a custom accent color */
+}
+
+.column-header {
+    font-weight: bold;
+    text-align: center;
+    color: #c0c0c8; /* Light grey to make the text pop */
+}
+
+/* Button styling */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4c4ca8; /* Space-like blue color */
+    border: none; /* Removes the default border */
+    border-radius: 4px; /* Rounded edges for the button */
+    color: white; /* White text on the button for contrast */
+    transition: background-color 0.3s ease; /* Smooth transition for mouse hover effect */
+}
+
+button:hover {
+    background-color: #5a5ab8; /* Slightly lighter blue on hover */
+}
+
+/* Link styling */
+a {
+    color: #9a9cd0; /* All links to have the soft purple color to maintain the theme */
+    text-decoration: none; /* Removes underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for a subtle effect */
+}

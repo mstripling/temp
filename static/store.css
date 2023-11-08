@@ -1,0 +1,87 @@
+
+body {
+    font-family: 'Consolas', 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #101018; /* Dark background */
+    margin: 0;
+    padding: 0;
+    color: #c0c0c8; /* Light grey text */
+}
+
+header {
+    background: #181828; /* Dark header background */
+    color: #9a9cd0; /* Header text color - soft purple */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #9a9cd0; /* Soft purple link color */
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.product {
+    flex-basis: 20%;
+    text-align: center;
+    background: #181828; /* Product background */
+    color: #c0c0c8; /* Product text color */
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px; /* Rounded corners for product items */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    color: #4c4ca8; /* Custom accent color for price */
+    font-weight: bold;
+}
+
+footer {
+    background: #181828; /* Footer background */
+    color: #555568; /* Muted text color for footer */
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add any additional hover effects or button stylings as needed */
+nav a:hover, footer a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+button {
+    background-color: #4c4ca8; /* Button background color */
+    color: white; /* Button text color */
+    /* Rest of button styling */
+}
+
+button:hover {
+    background-color: #5a5ab8; /* Button hover background color */
+}
+
+/* Any other hover effects or transitions for interactive elements */
+

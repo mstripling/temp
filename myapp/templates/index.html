@@ -5,45 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Recipe App</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-    <script src="https://unpkg.com/htmx.org@1.9.6" integrity="sha384-FhXw7b6AlE/jyjlZH5iHa/tTe9EpJ1Y55RjcgPbjeWMskSxZt1v9qkxLJWNJaGni" crossorigin="anonymous"></script>
-</head>
+    <title>Astro World</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='store.css') }}">
+    <!-- Add link to your CSS files as needed -->
+    </head>
 <body>
     <header>
-        <h1>My Recipe App</h1>
-        <p>Find recipes based on your dietary preferences and ingredients</p>
+        <h1>Welcome to Our Store</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <form hx-post="/search" hx-target="#results" hx-swap="outerHTML">
-            <h2>Filter Recipes</h2>
-            <div class="form-group ingredient-list">
-                <div></div>
-                <div class="column-header">Include</div>
-                <div class="column-header">Exclude</div>
-                <div class="ingredient-item">Dairy</div>
-                <input type="checkbox" class="ingredient-checkbox" name="include-ingredient" value="dairy">
-                <input type="checkbox" class="ingredient-checkbox" name="exclude-ingredient" value="dairy">
-                <div class="ingredient-item">Chicken</div>
-                <input type="checkbox" class="ingredient-checkbox" name="include-ingredient" value="chicken">
-                <input type="checkbox" class="ingredient-checkbox" name="exclude-ingredient" value="chicken">
-                <div class="ingredient-item">Beef</div>
-                <input type="checkbox" class="ingredient-checkbox" name="include-ingredient" value="beef">
-                <input type="checkbox" class="ingredient-checkbox" name="exclude-ingredient" value="beef">
-                <div class="ingredient-item">Pork</div>
-                <input type="checkbox" class="ingredient-checkbox" name="include-ingredient" value="pork">
-                <input type="checkbox" class="ingredient-checkbox" name="exclude-ingredient" value="pork">
-                <div class="ingredient-item">Other Meat</div>
-                <input type="checkbox" class="ingredient-checkbox" name="include-ingredient" value="other_meat">
-                <input type="checkbox" class="ingredient-checkbox" name="exclude-ingredient" value="other_meat">
-                <div class="ingredient-item">Eggs</div>
-                <input type="checkbox" class="ingredient-checkbox" name="include-ingredient" value="eggs">
-                <input type="checkbox" class="ingredient-checkbox" name="exclude-ingredient" value="eggs">
-            </div>
-            <button type="submit" id="results">Search Recipes</button>
-        </form>
-    </div>
+    <section id="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <!-- Product Item -->
+            <article class="product">
+                <img src="{{ url_for('static', filename='assets/cow.jpeg') }}" alt="Cow" />
+                <h3>Cow</h3>
+                <p>Cow: It's got titties n shit</p>
+                <p class="price">$19.99</p>
+                <button>Add to Cart</button>
+            </article>
+             <article class="product">
+                <img src="{{ url_for('static', filename='assets/basil.jpg') }}" alt="Basil" />
+                <h3>Basil</h3>
+                <p>It's good in sauces n shit <p>
+                <p class="price">$59.99</p>
+                <button>Add to Cart</button>
+            </article>
+              <article class="product">
+                <img src="{{ url_for('static', filename='assets/coffee.png') }}" alt="Coffee">
+                <h3>Coffee</h3>
+                <p>Tastes good n shit<p>
+                <p class="price">$159.99</p>
+                <button>Add to Cart</button>
+            </article>           <!-- Repeat for other products -->
+        </div>
+    </section>
+
+    <section id="all-products">
+        <h2>All Products</h2>
+        <div class="product-grid">
+            <!-- Dynamically repeat your product items here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Storefront Example © 2023</p>
+    </footer>
+
+    <!-- Add your scripts below if necessary -->
+    <!--
+    <script src="scripts.js"></script>
+    -->
 </body>
 </html>
-

@@ -1,8 +1,10 @@
 # ignore all __pychache__ directories
 **/__pycache__/
-__pychache__/
-/__pychache__
-/__pychache__/
+__pycache__/*
+myapp/__pycache__/*
+myapp/models/__pycache__/*
+myapp/config/__pycache__/*
+myapp/routes/__pycache__/*
 # ignore all env directories
 env/
 /env/

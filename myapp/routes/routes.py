@@ -35,5 +35,10 @@ def search():
     return render_template("search_results.html", recipes=recipes)
 
 
+@bp.route("/store")
+def store():
+    return render_template("store.html")
+
+
 def init_app(app):
     app.register_blueprint(bp)
